@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+	<title>阴阳师主题斗地主</title>
+	<link rel="stylesheet" href="./css/game.css">
+</head>
+
+<body>
+	<!-- music -->
+	<audio id="bgmusic" src="./music/music1.mp3" loop="loop" autoplay="autoplay"></audio>
+	<!-- ============================音乐背板=================================== -->
+	<article id="musicZZ">
+		<div id="musicBox">
+			<div id="leftTop"></div>
+			<div id="leftBottom"></div>
+			<div id="rightTop"></div>
+			<div id="rightBottom"></div>
+			<div id="musicWriter">
+				<img src="./images/writer.png">
+				<span>作者简介：
+					<hr><em>梅林茂（Shigeru Umebayashi）1951年2月19日出生于日本福冈北九州，亚洲影坛知名配乐家.</em>
+				</span>
+			</div>
+			<div id="musicBg">
+				<img src="./images/musicInfo.png">
+				<span>陰陽師2メインテーマ</span>
+				<div id="PSbuttonbg">
+					<div id="PSbutton"></div>
+					<div id="musicPlay"><span>STOP</span></div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<!-- ============================开场动画=================================== -->
+	<div id="enterGame">
+		<div id="juese_left">
+			<div id="juese_left_bg"></div>
+		</div>
+		<div id="juese_right">
+			<div id="juese_right_bg"></div>
+		</div>
+	</div>
+	<article id="Start_banner">
+		<!-- 云（上） -->
+		<div id="cloud_animate">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- 爱你魔力转圈圈 -->
+		<div id="Start_buttom">
+			<div id="music_left"></div>
+			<div id="musicButton"></div>
+			<div id="music_right"></div>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- 开始按钮 -->
+		<div id="banner_main">
+			<span></span>
+			<span></span>
+			<span id="enter">进入游戏</span>
+			<span id="loading">
+				<p>loading</p>
+			</span>
+		</div>
+		<!-- 云（下） -->
+		<div id="cloudBottom">
+			<span></span>
+		</div>
+
+		<div id="footer">
+			<!-- <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script> -->
+			<!-- <footer class="footer_content">
+				<p>本游戏适合16岁以上的玩家进入。积极健康的游戏心态是健康游戏的开端,本游戏故事情节设置紧凑,请您合理控制游戏时间,避免沉溺游戏影响生活,注意自我保护，防范网络陷阱。《网络文化经营许可证》
+					文网游备字〔2017〕Ｍ-CSG 2554 号 客服电话：95163517转806 (ISBN) 978-7-498-02997-3新广出审[2017]10264号</p>
+				<em>本游戏由@&copy;张上富、@李铨、@陈鹤标、@孔祥铭合力制作仅供参考,如有雷同,纯属意外!
+					This game is made by @ &amp; copy, Zhang Shangfu, @Li Quan, @Chen Hebiao, @Kong Xiangming for reference only.
+					If there are similarities, it is totally unexpected!2018~2019.<br />
+					特别感谢第三方的支持</em>
+				<span></span>
+				<span></span>
+				<span></span>
+			</footer> -->
+		</div>
+	</article>
+	<!-- =========================================开场动画end================================== -->
+	<article id="Boor_poker">
+		<span id="copyright">@&copy;斗地主合作类项目/组长:<em>@阿富</em>/<em>@铨</em>/<em>@鹤标</em>/<em>@小铭</em>-.-!!</span>
+		<span id="BGM">BGM</span>
+		<span id="hidden">Time&nbsp;&nbsp;&nbsp;:</span>
+		<span id="time"></span>
+	</article>
+	<div id="nav">
+		<ul>
+			<li>
+				<div id="changeBgone">
+					<ul>
+						<li index="1"></li>
+						<li index="2"></li>
+						<li index="3"></li>
+						<li index="4"></li>
+						<li index="5"></li>
+						<li index="6"></li>
+						<li index="7"></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div id="changeBgtwo">
+					<ul>
+						<li index="8"></li>
+						<li index="9"></li>
+						<li index="10"></li>
+						<li index="11"></li>
+						<li index="12"></li>
+						<li index="13"></li>
+						<li index="14"></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="left">
+		<ul class="play_1 play_poker" style="transform: rotateZ(90deg);"></ul>
+		<div class="get_bossbg">
+			<p class="get_boss">
+				<input class="get" type="button" name="">
+				<input class="cancel" type="button" name="">
+			</p>
+		</div>
+		<p class="play_btn">
+			<input class="play" type="button" name="">
+			<input class="pass" type="button" name="">
+			<input class="hint" type="button" name="">
+		</p>
+		<article class="clockPoker">
+			<div>
+				<span class="clock">30</span>
+			</div>
+		</article>
+		<article id="left_HP">
+			<img src="./images/HP01.png" alt="玩家头像">
+			<aside id="left_score"><span class="scoreEnd">3000</span></aside>
+		</article>
+		<article id="left_ikon"></article>
+		<article id="mulriple">
+			<span id="beishu">15</span>
+		</article>
+	</div>
+	<div class="mid">
+		<div class="mid_top">
+			<ul class="all_poker">
+				<!-- <li class="back"></li> -->
+			</ul>
+			<ul class="desktop_poker">
+				<!-- <li class="back"></li> -->
+			</ul>
+			<article id="mouseMover_girl">
+				<div id="girlFunction">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</article>
+		</div>
+		<div class="mid_end">
+			<ul class="play_2 play_poker">
+				<!-- <li style="width: 125px; height: 175px; background: url(./images/14.png) -16.2px -5px;"></li> -->
+			</ul>
+			<div class="get_bossbg">
+				<p class="get_boss">
+					<input class="get" type="button" name="">
+					<input class="cancel" type="button" name="">
+				</p>
+			</div>
+			<p class="play_btn">
+				<input class="play" type="button" name="">
+				<input class="pass" type="button" name="">
+				<input class="hint" type="button" name="">
+			</p>
+			<article class="clockPoker">
+				<div>
+					<span class="clock">30</span>
+				</div>
+			</article>
+			<article id="min_HP"><img src="./images/HP01.png" alt="玩家头像">
+				<aside id="bottom_score"><span class="scoreEnd">3000</span></aside>
+			</article>
+			<article id="min_ikon"></article>
+		</div>
+	</div>
+	<div class="right">
+		<ul class="play_3 play_poker" style="transform: rotateZ(-90deg);"></ul>
+		<div class="get_bossbg">
+			<p class="get_boss">
+				<input class="get" type="button" name="">
+				<input class="cancel" type="button" name="">
+			</p>
+		</div>
+		<p class="play_btn">
+			<input class="play" type="button" name="">
+			<input class="pass" type="button" name="">
+			<input class="hint" type="button" name="">
+		</p>
+		<article class="clockPoker">
+			<div>
+				<span class="clock">30</span>
+			</div>
+		</article>
+		<article id="right_HP"><img src="./images/HP01.png" alt="玩家头像">
+			<aside id="right_score"><span class="scoreEnd">3000</span></aside>
+		</article>
+	</div>
+	<article id="bigBorder"></article>
+	<article id="bottom">
+		<div id="bottomIcon"></div>
+	</article>
+	<article id="top">
+		<div id="topIcon"></div>
+	</article>
+	<article id="juese_min">
+		<div id="juese_min_title"></div>
+	</article>
+	<article id="videoEffect">
+		<div id="video_type"></div>
+		<div id="video_img1"></div>
+		<div id="video_img2"></div>
+		<div id="videoContent">
+			<video id="video" src="video/王炸.mp4"></video>
+		</div>
+	</article>
+	<article id="titleInfo">
+		<div id="infoContent">
+			<!-- <span>本局流局,请重新开始!</span><br><span>（点击空白的地方即可重新开局）</span> -->
+			<img src="./images/titleInfo_img.png">
+		</div>
+	</article>
+	<article id="gameTitlebg">
+		<div id="gameTitle"></div>
+	</article>
+	<article id="scene">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</article>
+	<audio id="pokerMusic" src="./music/1.mp3"></audio>
+	<audio id="pokerMusicS" src="./music/1.mp3"></audio>
+	<article id="right_ikon"></article>
+	<article id="gameScore">
+		<div id="gameScore_content">
+			<div id="C1">地主胜利</div>
+			<hr>
+			<div id="C2">你本局积累积分为：<br /><br /><span id="C3">0</span></div>
+			<div id="C4"></div>
+		</div>
+
+	</article>
+	<article id="resetGame"></article>
+	<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./js/videoaudio.js"></script>
+	<script type="text/javascript" src="./js/game.js"></script>
+	<script type="text/javascript">
+		// 背景音乐控制
+		let musicPlay = document.getElementById("musicPlay");
+		let BGM = document.getElementById("BGM");
+		let bgmusic = document.getElementById("bgmusic");
+		let Musicstatus = true;
+		let music_span = document.getElementById('musicPlay').getElementsByTagName('span')[0];
+		// console.log(music_span);
+		musicPlay.onclick = function () {
+			if (Musicstatus == true) {
+				bgmusic.pause();
+				Musicstatus = false;
+				// alert(1);
+				music_span.innerHTML = 'PLAY';
+			} else {
+				bgmusic.play();
+				Musicstatus = true;
+				// alert(2);
+				music_span.innerHTML = 'STOP';
+			}
+		}
+		BGM.onclick = function () {
+			if (Musicstatus == true) {
+				bgmusic.pause();
+				Musicstatus = false;
+				// alert(1);
+				music_span.innerHTML = 'PLAY';
+			} else {
+				bgmusic.play();
+				Musicstatus = true;
+				// alert(2);
+				music_span.innerHTML = 'STOP';
+			}
+		}
+
+	</script>
+</body>
+
+</html>
